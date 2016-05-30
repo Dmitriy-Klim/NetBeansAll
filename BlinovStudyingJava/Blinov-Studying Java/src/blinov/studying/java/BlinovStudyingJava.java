@@ -5,6 +5,8 @@
  */
 package blinov.studying.java;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Admin
@@ -53,7 +55,12 @@ public class BlinovStudyingJava {
      * 
      * Обращение к методу объекта
      */
-        p.prn();
+        try {
+            p.prn();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ex.toString());
+        }
+        
     }
     
 }
