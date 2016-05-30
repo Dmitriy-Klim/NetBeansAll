@@ -14,8 +14,19 @@ public class BlinovStudyingJava {
     /**
      * @param args the command line arguments
      */
+    public static void printcons() {
+        System.out.println("Hello class world");
+    }
+    public static class printclass {
+        private void prn() {
+            System.out.println("Some thind to print on console");
+        }
+    }
     public static void main(String[] args) {
         // TODO code application logic here
+        printcons();
+        printclass p = new printclass();
+        p.prn();
     }
     
 }
