@@ -5,6 +5,8 @@
  */
 package Zadanie_1;
 
+import Zadanie_1.Pribory.Electropribory;
+import Zadanie_1.Pribory.*;
 import java.util.Arrays;
 
 

@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zadanie_1;
+package Zadanie_1.Pribory;
 
 
 /**
  *
  * @author Admin
  */
-class NagrevatelniePribory extends Electropribory {
+public class NagrevatelniePribory extends Electropribory {
     public int m1=0;
     public int m3;
         public NagrevatelniePribory (String name, int kilovaty, boolean rozetka, int litry) {
