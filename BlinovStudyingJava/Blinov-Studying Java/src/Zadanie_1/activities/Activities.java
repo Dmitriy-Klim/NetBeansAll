@@ -23,8 +23,7 @@ public class Activities {
     
     public void activities() {
         System.out.println("2. Определение суммарной потребляемой мощности");
-        
-        
+        int Arr[] = new int[4];
         
           System.out.println("3.  Сотртировка приборов. От самого экономного до самого прожлрливого");
 //        Arr[0]=boiler.m3;
