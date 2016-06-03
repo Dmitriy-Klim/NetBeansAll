@@ -23,16 +23,10 @@ public class Activities {
     
     public void activities() {
         System.out.println("2. Определение суммарной потребляемой мощности");
-        int Arr[] = new int[4];
+        
         
           System.out.println("3.  Сотртировка приборов. От самого экономного до самого прожлрливого");
-//        Arr[0]=boiler.m3;
-//        Arr[1]=kipyatilnik.m3;
-//        Arr[3]=lustra.m3;
-//        Arr[3]=nastolnayalampa.m3;
-//        Arrays.sort(Arr);
-//        for (int i = 0; i < Arr.length; i++) {
-//            System.out.println(Arr[i]);
+//        
 //            
 //        }
           System.out.println("");

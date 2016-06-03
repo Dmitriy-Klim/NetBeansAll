@@ -27,7 +27,7 @@ public class Room {
     public void room() {
         System.out.println("1. Создание всех электроприборов");
         
-        Object[] Arr = new Object[4];
+        Object[] arr = new Object[4];
         
         NagrevatelniePribory boiler = new NagrevatelniePribory("Бойлер", 2000, true, 50);
         NagrevatelniePribory kipyatilnik = new NagrevatelniePribory("Кипятильник", 3000, false, 10);
@@ -35,11 +35,12 @@ public class Room {
         OsvetitelniePribory nastolnayalampa = new OsvetitelniePribory("Настольная лампа", 60, false, 8, 1);
         System.out.println("");
         
-        Arr[0] = boiler.getKilovaty();
-        Arr[1] = kipyatilnik.getKilovaty();
-        Arr[2] = lustra.getKilovaty();
-        Arr[3] = nastolnayalampa.getKilovaty();
+        arr[0] = boiler.getKilovaty();
+        arr[1] = kipyatilnik.getKilovaty();
+        arr[2] = lustra.getKilovaty();
+        arr[3] = nastolnayalampa.getKilovaty();
         
+      
         Activities activ = new Activities();
         activ.activities();
     }
