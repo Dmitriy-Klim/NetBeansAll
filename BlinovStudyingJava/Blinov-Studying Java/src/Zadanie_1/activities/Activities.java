@@ -5,21 +5,26 @@
  */
 package Zadanie_1.activities;
 
+import Room.Room;
 import Zadanie_1.Pribory.Electropribory;
-
 /**
  *
  * @author Admin
  */
 public class Activities {
+    private int summMosh = 0;
+    
+    public int getSumMosh() {
+        return summMosh;
+    }
+    public void setSumMosh(int moshnost){
+        summMosh = summMosh+moshnost;
+    }
+    
     public void activities() {
         System.out.println("2. Определение суммарной потребляемой мощности");
         
-        System.out.println("");
         
-        int Arr[] = new int[4];
-        Electropribory el = new Electropribory();
-        //System.out.println("Общая мощьность: "+(moshnost=boiler.m1+kipyatilnik.m1+lustra.m2+nastolnayalampa.m2));
         
           System.out.println("3.  Сотртировка приборов. От самого экономного до самого прожлрливого");
 //        Arr[0]=boiler.m3;

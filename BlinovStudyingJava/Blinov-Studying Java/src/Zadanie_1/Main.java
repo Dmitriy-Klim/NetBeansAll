@@ -21,10 +21,10 @@ public class Main {
     
     public static void main(String[] args) {
         Room room = new Room();
-        Activities activ = new Activities();
-        
         room.room();
-        activ.activities();
+        
+        
+       
         
                 
         
