@@ -7,6 +7,7 @@ package Task_1;
 
 import Task_1.Room.Room;
 import Task_1.Devices.ElectricalDevices;
+import Task_1.activities.Activities;
 import java.util.Arrays;
 
 
@@ -20,6 +21,8 @@ public class Main {
     public static void main(String[] args) {
         Room room = new Room();
         room.room();
+        
+        
         
         
        

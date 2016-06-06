@@ -14,44 +14,31 @@ import Task_1.activities.Activities;
  * @author Admin
  */
 public class Room {
-    private int moshnost=0;
+    private int power=0;
     
     public int getMoshnost() {
-        return moshnost;
+        return power;
         }
     
-    public void setMoshnost(int moshnost) {
-        this.moshnost = moshnost;
+    public void setMoshnost(int power) {
+        this.power = power;
     }
     
     public void room() {
         System.out.println("1. Создание всех электроприборов");
         
-        Object[] arr = new Object[4];
+        Activities activ = new Activities();
         
         HeatingDevices boiler = new HeatingDevices("Бойлер", 2000, true, 50);
-        HeatingDevices kipyatilnik = new HeatingDevices("Кипятильник", 3000, false, 10);
-        LightingDevices lustra = new LightingDevices("Люстра", 75, true, 13, 3);
-        LightingDevices nastolnayalampa = new LightingDevices("Настольная лампа", 60, false, 8, 1);
+        HeatingDevices kettle = new HeatingDevices("Кипятильник", 3000, false, 10);
+        LightingDevices chandelier = new LightingDevices("Люстра", 75, true, 13, 3);
+        LightingDevices tableLamp = new LightingDevices("Настольная лампа", 60, false, 8, 1);
         System.out.println("");
         
-        //Activities activ = new Activities();
-        System.out.println(boiler.getKilovaty());
-        System.out.println(kipyatilnik.getKilovaty());
-        System.out.println(lustra.getKilovaty());
-        System.out.println(nastolnayalampa.getKilovaty());
-        
-        arr[0] = boiler.getKilovaty();
-        arr[1] = kipyatilnik.getKilovaty();
-        arr[2] = lustra.getKilovaty();
-        arr[3] = nastolnayalampa.getKilovaty();
-        
-        
-           
-        //activ.activities(boiler.getKilovaty());
-       // activ.activities(kipyatilnik.getKilovaty());
-        //activ.activities(lustra.getKilovaty());
-        //activ.activities(nastolnayalampa.getKilovaty());
-    }
-    
+        activ.powerCount(boiler.getM3());
+        activ.powerCount(chandelier.getM3());
+        activ.powerCount(kettle.getM3());
+        activ.powerCount(tableLamp.getM3());
+        activ.result();
+       }
 }

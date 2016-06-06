@@ -12,27 +12,22 @@ import Task_1.Devices.ElectricalDevices;
  * @author Admin
  */
 public class Activities {
-    private int summMosh = 0;
+    private int summPower = 0;
     
-    public int getSumMosh() {
-        return summMosh;
+    public int getSummPower() {
+        return summPower;
     }
-    public void setSumMosh(int moshnost){
-        summMosh = summMosh+moshnost;
+    public void setSummPower(int power){
+        summPower = summPower+power;
     }
     
     
-    public void activities(int activ) {
-        System.out.println("2. Определение суммарной потребляемой мощности");
-        activ = 0;
-        activ += activ;
-        System.out.println(activ);
-        
-          System.out.println("3.  Сотртировка приборов. От самого экономного до самого прожлрливого");
-//        
-//            
-//        }
-          System.out.println("");
+    public void powerCount(int m3Power) {
+    setSummPower(m3Power); }
+    
+    
+    public void result() {
+    System.out.println("Общая мощьность всех электроприборов: "+getSummPower());
     }
     
 }
