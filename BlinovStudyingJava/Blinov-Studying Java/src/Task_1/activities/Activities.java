@@ -27,7 +27,7 @@ public class Activities {
     
     
     public void result() {
-    System.out.println("Общая мощьность всех электроприборов: "+getSummPower());
+    System.out.println("2. Общая мощьность всех электроприборов: "+getSummPower());
     }
     
 }
