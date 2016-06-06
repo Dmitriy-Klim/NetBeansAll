@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zadanie_1.Pribory;
+package Task_1.Devices;
 
 
 /**
  *
  * @author Admin
  */
-public class NagrevatelniePribory extends Electropribory {
+public class HeatingDevices extends ElectricalDevices {
     private int m1=0;
     private int m3;
     
@@ -28,12 +28,12 @@ public class NagrevatelniePribory extends Electropribory {
         this.m3 = m3;
     }
     
-        public NagrevatelniePribory (String name, int kilovaty, boolean rozetka, int litry) {
-            m3=kilovaty;
-            System.out.println("Прибор "+ name+ " потребляет "+kilovaty+" ватт, на "+litry+" литров");
-            if (rozetka==true) {
+        public HeatingDevices (String name, int kilowatt, boolean powerSocket, int litry) {
+            m3=kilowatt;
+            System.out.println("Прибор "+ name+ " потребляет "+kilowatt+" ватт, на "+litry+" литров");
+            if (powerSocket==true) {
                 System.out.println(name+" включен в розетку");
-                m1=kilovaty;
+                m1=kilowatt;
             }
             return ;
         }

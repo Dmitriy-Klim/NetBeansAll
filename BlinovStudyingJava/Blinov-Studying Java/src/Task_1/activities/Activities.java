@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zadanie_1.activities;
+package Task_1.activities;
 
-import Room.Room;
-import Zadanie_1.Pribory.Electropribory;
+import Task_1.Room.Room;
+import Task_1.Devices.ElectricalDevices;
 /**
  *
  * @author Admin
@@ -21,9 +21,12 @@ public class Activities {
         summMosh = summMosh+moshnost;
     }
     
-    public void activities() {
+    
+    public void activities(int activ) {
         System.out.println("2. Определение суммарной потребляемой мощности");
-        
+        activ = 0;
+        activ += activ;
+        System.out.println(activ);
         
           System.out.println("3.  Сотртировка приборов. От самого экономного до самого прожлрливого");
 //        

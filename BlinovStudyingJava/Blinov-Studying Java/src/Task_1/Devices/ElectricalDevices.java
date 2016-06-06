@@ -3,35 +3,40 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zadanie_1.Pribory;
+package Task_1.Devices;
 
 /**
  *
  * @author Admin
  */
-public class Electropribory {
+public class ElectricalDevices {
         private String name;
-        private int kilovaty;
-        private boolean rozetka;
+        private int kilowatt;
+        private boolean powerSocket;
         
         public String getname() {
             return name;
         }
-        public void setName(String name){
+
+    /**
+     *
+     * @param name
+     */
+    public void setName(String name){
             this.name = name;
         }
         
         public int getKilovaty() {
-            return kilovaty;
+            return kilowatt;
         }
-        public void setKilovaty(int kilovaty){
-            this.kilovaty = kilovaty;
+        public void setKilovaty(int kilowatt){
+            this.kilowatt = kilowatt;
         }
         
         public boolean getRozetka() {
-            return rozetka;
+            return powerSocket;
         }
-        public void setRozetka(boolean rozetka) {
-            this.rozetka = rozetka;
+        public void setRozetka(boolean powerSocket) {
+            this.powerSocket = powerSocket;
         }
         }

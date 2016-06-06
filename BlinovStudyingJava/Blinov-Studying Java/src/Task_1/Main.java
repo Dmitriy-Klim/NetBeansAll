@@ -3,13 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Zadanie_1;
+package Task_1;
 
-import Zadanie_1.Pribory.Electropribory;
-import Zadanie_1.Pribory.*;
+import Task_1.Room.Room;
+import Task_1.Devices.ElectricalDevices;
 import java.util.Arrays;
-import Room.*;
-import Zadanie_1.activities.*;
 
 
 
