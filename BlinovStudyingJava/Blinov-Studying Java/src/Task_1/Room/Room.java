@@ -39,6 +39,10 @@ public class Room {
         activ.powerCount(chandelier.getM3());
         activ.powerCount(kettle.getM3());
         activ.powerCount(tableLamp.getM3());
+        
+        activ.consumedPower(boiler.getM3());
+        activ.consumedPower(chandelier.getM3());
+        
         activ.result();
        }
 }
