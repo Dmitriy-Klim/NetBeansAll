@@ -5,6 +5,6 @@
  */
 package SomeClass;
 
-public class SomeClass {
-                       
+ public class SomeClass {
+                      
                     }
