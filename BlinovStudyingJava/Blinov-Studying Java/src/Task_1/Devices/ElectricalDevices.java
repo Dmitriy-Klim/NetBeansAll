@@ -17,11 +17,6 @@ public class ElectricalDevices {
         public String getname() {
             return name;
         }
-
-    /**
-     *
-     * @param name
-     */
     public void setName(String name){
             this.name = name;
         }
