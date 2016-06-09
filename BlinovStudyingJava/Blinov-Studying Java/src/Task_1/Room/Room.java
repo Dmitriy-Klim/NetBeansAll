@@ -25,12 +25,18 @@ public class Room {
     Tv tv = new Tv(); 
     
     public ArrayList devices;
-
+    Activities active = new Activities();
     public Room() {
         this.devices = new ArrayList ();
-        devices.add(1, frige);
-        devices.add(2, boiler);
-        devices.add(3, hairdryer);
-        devices.add(4, tv);
+        devices.add(frige);
+        devices.add(boiler);
+        devices.add(hairdryer);
+        devices.add(tv);
+        
+        active.findDevice(boiler.getKilovaty(), frige.getKilovaty(), hairdryer.getKilovaty(), tv.getKilovaty());
+        
     }
+    
+    
+    
 }
