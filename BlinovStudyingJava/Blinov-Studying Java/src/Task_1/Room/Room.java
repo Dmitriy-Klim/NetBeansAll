@@ -19,7 +19,7 @@ import Task_1.Devices.Tv;
  */
 public class Room<Devices> {        
 
-    ArrayList<Devices> allDevices = new ArrayList<Devices>();
+    ArrayList<? super Devices> allDevices = new ArrayList<Devices>();
   
     public void setAllDevices(ArrayList<Devices> allDevices) {
         this.allDevices = allDevices;
@@ -28,7 +28,5 @@ public class Room<Devices> {
         allDevices.set(2, (Devices) new Frige());
         allDevices.set(3, (Devices) new Tv());
     } 
-    public void getAllDevices(ArrayList<Devices> allDevices) {
-        System.out.println(allDevices.get(0));
-    }
+   
     }
