@@ -17,26 +17,18 @@ import Task_1.Devices.Tv;
  *
  * @author Admin
  */
-public class Room {
-    
-    Frige frige = new Frige();
-    Boiler boiler = new Boiler();
-    Hairdryer hairdryer = new Hairdryer();
-    Tv tv = new Tv(); 
-    
-    public ArrayList devices;
-    Activities active = new Activities();
-    public Room() {
-        this.devices = new ArrayList ();
-        devices.add(frige);
-        devices.add(boiler);
-        devices.add(hairdryer);
-        devices.add(tv);
-        
-        active.findDevice(boiler.getKilovaty(), frige.getKilovaty(), hairdryer.getKilovaty(), tv.getKilovaty());
-        
+public class Room<Devices> {        
+
+    ArrayList<Devices> allDevices = new ArrayList<Devices>();
+  
+    public void setAllDevices(ArrayList<Devices> allDevices) {
+        this.allDevices = allDevices;
+        allDevices.set(0, (Devices) new Boiler());
+        allDevices.set(1, (Devices) new Hairdryer());
+        allDevices.set(2, (Devices) new Frige());
+        allDevices.set(3, (Devices) new Tv());
+    } 
+    public void getAllDevices(ArrayList<Devices> allDevices) {
+        System.out.println(allDevices.get(0));
     }
-    
-    
-    
-}
+    }

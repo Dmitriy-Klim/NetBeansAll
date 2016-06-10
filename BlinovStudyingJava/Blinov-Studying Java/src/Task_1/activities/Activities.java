@@ -35,16 +35,4 @@ public class Activities {
         else {System.out.println("Такого прибора нет");}
     }
     
-    public void check(boolean boiler, boolean frige, boolean hairdryer, boolean tv) {
-        if (boiler==true){
-            summPower();}
-        if (frige==true){summPower();}
-        if (hairdryer==true){summPower();}
-        if (tv==true){summPower();}
-    }
-    
-    public void summPower() {
-        
-    }
-    
     }
