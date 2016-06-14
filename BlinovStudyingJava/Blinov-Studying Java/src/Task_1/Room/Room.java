@@ -28,5 +28,4 @@ public class Room<Devices> {
         allDevices.set(2, (Devices) new Frige());
         allDevices.set(3, (Devices) new Tv());
     } 
-   
     }
